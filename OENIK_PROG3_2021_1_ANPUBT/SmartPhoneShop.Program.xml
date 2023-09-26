@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartPhoneShop.Program</name>
+    </assembly>
+    <members>
+        <member name="T:SmartPhoneShop.Program.Factory">
+            <summary>
+            SmartPhoneShop Factory class.
+            </summary>
+        </member>
+        <member name="F:SmartPhoneShop.Program.Factory.log">
+            <summary>
+            Business logic object.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Factory.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Program.Factory"/> class.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Factory.GetLog">
+            <summary>
+            Return the BLogic object.
+            </summary>
+            <returns>Blogic object.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Program.Program">
+            <summary>
+            SmartPhoneShop menu.
+            </summary>
+        </member>
+        <member name="F:SmartPhoneShop.Program.Program.fact">
+            <summary>
+            BLogic.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.ListallBrands">
+            <summary>
+            List all Brand objects from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.ListMethods">
+            <summary>
+            Navigate to the List methods.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.AddMethods">
+            <summary>
+            Navigate to the Add methods.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.RemoveMethods">
+            <summary>
+            Navigate to the Remove methods.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.ModifyMethods">
+            <summary>
+            Navigate to the Modify methods.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.NonCrudMethods">
+            <summary>
+            Navigate to the Non Crud methods.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.Page2">
+            <summary>
+            Navigate to the Task methods.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.ListallParameters">
+            <summary>
+            List all Parameters objects from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.ListallTypes">
+            <summary>
+            List all Types objects from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.Addbrands">
+            <summary>
+            Add a Brands object to Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.AddTypes">
+            <summary>
+            Add a Types object to Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.AddParameters">
+            <summary>
+            Add a Parameters object to Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.Removebrands">
+            <summary>
+            Remove a Brands object from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.RemoveTypes">
+            <summary>
+            Remove a Types object from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.RemoveParameters">
+            <summary>
+            Remove a Parameters object from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.Updatebrands">
+            <summary>
+            Update a Brands object from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.UpdateTypes">
+            <summary>
+            Update a Types object from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.UpdateParameters">
+            <summary>
+            Update a Parameters object from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.FindTypeByBrandName">
+            <summary>
+            This method return Types objects and using Brand name.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.AllRamAndRomByTypeName">
+            <summary>
+            Find all roms and all rams by typename.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.NoHalfPriceByBrandname">
+            <summary>
+            This method return parameters objects where halfprice equals 0 and using Brand name.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.NoHalfPriceByBrandnameAsync">
+            <summary>
+            This method return parameters objects where halfprice equals 0 and using Brand name.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.FindParameterByTypeName">
+            <summary>
+            This method return Parameters objects and using the Brand name.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.FindParameterByTypeNameAsync">
+            <summary>
+            This method return Parameters objects and using the Brand name.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.SumRamAndRomByTypeNameAsync">
+            <summary>
+            This method return Parameters objects and using the Brand name.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.DoSomething">
+            <summary>
+            This method return Brands objects where Brandname contains the input text.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.DoSomethingAsync">
+            <summary>
+            This method return Brands objects where Brandname contains the input text.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.BrandRateByName">
+            <summary>
+            This method list the average rating of brands.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.AllHalfPrice">
+            <summary>
+            This method list the all halfprice of models.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.ErrorChecker(System.String)">
+            <summary>
+            Check the integer convert errors.
+            <param name="input">Input string.</param>
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.ErrorMessage">
+            <summary>
+            Integer convert error message.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.BrandIdChecker(System.Int32)">
+            <summary>
+            Check to see if this ID is in the database.
+            </summary>
+            <param name="input">id of brand.</param>
+            <returns>exits or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.TypeIdChecker(System.Int32)">
+            <summary>
+            Check to see if this ID is in the database.
+            </summary>
+            <param name="input">id of type.</param>
+            <returns>exits or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Program.Program.ParameterIdChecker(System.Int32)">
+            <summary>
+            Check to see if this ID is in the database.
+            </summary>
+            <param name="input">id of parameter.</param>
+            <returns>exits or not.</returns>
+        </member>
+    </members>
+</doc>

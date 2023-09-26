@@ -1,0 +1,485 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartPhoneShop.Repository</name>
+    </assembly>
+    <members>
+        <member name="T:SmartPhoneShop.Repository.BrandRepository">
+            <summary>
+            BrandRepository. Implements Irepository interface.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.GetAllContentsFromTable">
+            <summary>
+            Gets get all contents from Brands table.
+            </summary>
+            <returns>object tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.#ctor(SmartPhoneShop.Data.Models.DatabaseContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Repository.BrandRepository"/> class.
+            </summary>
+            <param name="ctx">injected BrandRepository collection.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.Getall">
+            <summary>
+            Gets every Brands.
+            </summary>
+            <returns>object.</returns>
+        </member>
+        <member name="P:SmartPhoneShop.Repository.BrandRepository.All">
+            <summary>
+            Gets every Brands.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.GetOne(System.Int32)">
+            <summary>
+            Gives back a Brands object from database.
+            </summary>
+            <param name="id">Brands id.</param>
+            <returns>A Brands object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.GetBrandsTostringbyId(System.Int32)">
+            <summary>
+            Gives back a Brands.Tostring() from database.
+            </summary>
+            <param name="id">Brands id.</param>
+            <returns>A Brands object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.IsExists(System.Int32)">
+            <summary>
+            Returns true if the brand object is exists.
+            </summary>
+            <param name="id">Brands Id.</param>
+            <returns>True if exists, or false not exists.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.Remove(System.Int32)">
+            <summary>
+            Delete a Brands object from database.
+            </summary>
+            <param name="id">id of Brands object.</param>
+            <returns>True if removed, or false not removed.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.AddaBrand(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a Brands object to database.
+            </summary>
+            /// <param name="brandname">name of Brands object.</param>
+            /// <param name="country">country of Brands object.</param>
+            /// <param name="popularity">popularity of Brands object.</param>
+            /// <param name="totalincome">Total Income of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.BrandRepository.UpdateBrands(System.Int32,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Update a Brands object in database.
+            </summary>
+            <param name="brandid">id of Brands object.</param>
+            /// <param name="brandname">name of Brands object.</param>
+            /// <param name="country">country of Brands object.</param>
+            /// <param name="popularity">popularity of Brands object.</param>
+            /// <param name="totalincome">Total Income of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Repository.Interfaces.IBrandsRepository">
+            <summary>
+            Interface of BrandsRepository.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IBrandsRepository.Getall">
+            <summary>
+            Gets every Brands.
+            </summary>
+            <returns>object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IBrandsRepository.GetAllContentsFromTable">
+            <summary>
+            Gets get all contents from Brands table.
+            </summary>
+            <returns>object tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IBrandsRepository.GetOne(System.Int32)">
+            <summary>
+            Gives back a Brands object from database.
+            </summary>
+            <param name="id">Brands id.</param>
+            <returns>A Brands object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IBrandsRepository.GetBrandsTostringbyId(System.Int32)">
+            <summary>
+            Gives back a Brands.Tostring() from database.
+            </summary>
+            <param name="id">Brands id.</param>
+            <returns>A Brands object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IBrandsRepository.IsExists(System.Int32)">
+            <summary>
+            Returns true if the brand object is exists.
+            </summary>
+            <param name="id">Brands Id.</param>
+            <returns>True if exists, or false not exists.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IBrandsRepository.Remove(System.Int32)">
+            <summary>
+            Delete a Brands object from database.
+            </summary>
+            <param name="id">id of Brands object.</param>
+            <returns>True if removed, or false not removed.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IBrandsRepository.AddaBrand(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a Brands object to database.
+            </summary>
+            /// <param name="brandname">name of Brands object.</param>
+            /// <param name="country">country of Brands object.</param>
+            /// <param name="popularity">popularity of Brands object.</param>
+            /// <param name="totalincome">Total Income of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IBrandsRepository.UpdateBrands(System.Int32,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            Update a Brands object in database.
+            </summary>
+            <param name="brandid">id of Brands object.</param>
+            /// <param name="brandname">name of Brands object.</param>
+            /// <param name="country">country of Brands object.</param>
+            /// <param name="popularity">popularity of Brands object.</param>
+            /// <param name="totalincome">Total Income of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Repository.Interfaces.IExample">
+            <summary>
+            Iexample interface.
+            </summary>
+        </member>
+        <member name="T:SmartPhoneShop.Repository.Interfaces.IParametersRepository">
+            <summary>
+            Interface of ParametersRepository.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IParametersRepository.Getall">
+            <summary>
+            Gets every Parameters.
+            </summary>
+            <returns>object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IParametersRepository.GetAllContentsFromTable">
+            <summary>
+            Gets get all contents from Parameters table.
+            </summary>
+            <returns>object tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IParametersRepository.GetOne(System.Int32)">
+            <summary>
+            Gives back a Parameter object from database.
+            </summary>
+            <param name="id">Parameter id.</param>
+            <returns>A Parameter object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IParametersRepository.GetParametersTostringbyId(System.Int32)">
+            <summary>
+            Gives back a Parameters.Tostring() from database.
+            </summary>
+            <param name="id">Brands id.</param>
+            <returns>A Parameter object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IParametersRepository.IsExists(System.Int32)">
+            <summary>
+            Returns true if the Parameters object is exists.
+            </summary>
+            <param name="id">Parameters Id.</param>
+            <returns>True if exists, or false not exists.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IParametersRepository.Remove(System.Int32)">
+            <summary>
+            Delete a Parameters object from database.
+            </summary>
+            <param name="id">id of Parameters object.</param>
+            <returns>True if removed, or false not removed.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IParametersRepository.Addaparameter(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Add a Parameters object to database.
+            </summary>
+            <param name="paraname">name of Parameters object.</param>
+            <param name="halfprice">HalfPrice of Brands object.</param>
+            <param name="ram">Ram of Brands object.</param>
+            <param name="rom">Rom of Brands object.</param>
+            <param name="typeid">TyypeId of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.Interfaces.IParametersRepository.UpdateParameters(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            update a Parameters object to database.
+            </summary>
+            <param name="paraid">id of Parameters object.</param>
+            <param name="paraname">name of Parameters object.</param>
+            <param name="halfprice">HalfPrice of Brands object.</param>
+            <param name="ram">Ram of Brands object.</param>
+            <param name="rom">Rom of Brands object.</param>
+            <param name="typeid">TyypeId of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Repository.ITypesRepository">
+            <summary>
+            Interface of TypesRepository.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ITypesRepository.Getall">
+            <summary>
+            Gets every Types.
+            </summary>
+            <returns>object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ITypesRepository.GetAllContentsFromTable">
+            <summary>
+            Gets get all contents from Types table.
+            </summary>
+            <returns>object tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ITypesRepository.GetOne(System.Int32)">
+            <summary>
+            Gives back a Type object from database.
+            </summary>
+            <param name="id">Type id.</param>
+            <returns>A Type object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ITypesRepository.GetTypesTostringbyId(System.Int32)">
+            <summary>
+            Gives back a Types.Tostring() from database.
+            </summary>
+            <param name="id">Types id.</param>
+            <returns>A Type object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ITypesRepository.IsExists(System.Int32)">
+            <summary>
+            Returns true if the Types object is exists.
+            </summary>
+            <param name="id">Types Id.</param>
+            <returns>True if exists, or false not exists.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ITypesRepository.Remove(System.Int32)">
+            <summary>
+            Delete a Types object from database.
+            </summary>
+            <param name="id">id of Types object.</param>
+            <returns>True if removed, or false not removed.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ITypesRepository.AddType(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a Types object to database.
+            </summary>
+            <param name="brandid">name of Parameters object.</param>
+            <param name="modelname">HalfPrice of Brands object.</param>
+            <param name="rating">Ram of Brands object.</param>
+            <param name="starterprice">Rom of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ITypesRepository.UpdateTypes(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a Types object to database.
+            </summary>
+            <param name="tipid">id of Types object.</param>,0
+            <param name="brandid">Brand id of Types object.</param>
+            <param name="modelname">Name of Types object.</param>
+            <param name="rating">Rating of Types object.</param>
+            <param name="starterprice">Price of Types object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Repository.IRepository`1">
+            <summary>
+            Interface which requires the CRUD methods.
+            </summary>
+            <typeparam name="T">T type. </typeparam>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.IRepository`1.GetOne(System.Int32)">
+            <summary>
+            return a object by id.
+            </summary>
+            <param name="id">ID of the object.</param>
+            <returns>Type.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.IRepository`1.Getall">
+            <summary>
+            return all object.
+            </summary>
+            <returns>object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.IRepository`1.GetAllContentsFromTable">
+            <summary>
+            Gets the contents of the table.
+            </summary>
+            <returns>Object tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.IRepository`1.IsExists(System.Int32)">
+            <summary>
+            Gives back if the element exists or not.
+            </summary>
+            <param name="id">ID of the object.</param>
+            <returns>If it exists, true.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.IRepository`1.Remove(System.Int32)">
+            <summary>
+            Removes an object from the db.
+            </summary>
+            <param name="id">ID of the object.</param>
+            <returns>Gives back true, if it was succesful.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Repository.ParametersRepository">
+            <summary>
+            ParametersRepository. Implements Irepository interface.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.GetAllContentsFromTable">
+            <summary>
+            Gets get all contents from Parameters table.
+            </summary>
+            <returns>object tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.Getall">
+            <summary>
+            Gets every Parameters.
+            </summary>
+            <returns>object.</returns>
+        </member>
+        <member name="P:SmartPhoneShop.Repository.ParametersRepository.All">
+            <summary>
+            Gets every data from Types.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.#ctor(SmartPhoneShop.Data.Models.DatabaseContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Repository.ParametersRepository"/> class.
+            </summary>
+            <param name="ctx">injected ParametersRepository collection.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.GetOne(System.Int32)">
+            <summary>
+            Gives back a Parameter object from database.
+            </summary>
+            <param name="id">Parameter id.</param>
+            <returns>A Parameter object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.GetParametersTostringbyId(System.Int32)">
+            <summary>
+            Gives back a Parameters.Tostring() from database.
+            </summary>
+            <param name="id">Brands id.</param>
+            <returns>A Parameter object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.IsExists(System.Int32)">
+            <summary>
+            Returns true if the Parameters object is exists.
+            </summary>
+            <param name="id">Parameters Id.</param>
+            <returns>True if exists, or false not exists.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.Remove(System.Int32)">
+            <summary>
+            Delete a Parameters object from database.
+            </summary>
+            <param name="id">id of Parameters object.</param>
+            <returns>True if removed, or false not removed.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.Addaparameter(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Add a Parameters object to database.
+            </summary>
+            <param name="paraname">name of Parameters object.</param>
+            <param name="halfprice">HalfPrice of Brands object.</param>
+            <param name="ram">Ram of Brands object.</param>
+            <param name="rom">Rom of Brands object.</param>
+            <param name="typeid">TyypeId of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.ParametersRepository.UpdateParameters(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            update a Parameters object to database.
+            </summary>
+            <param name="paraid">id of Parameters object.</param>
+            <param name="paraname">name of Parameters object.</param>
+            <param name="halfprice">HalfPrice of Brands object.</param>
+            <param name="ram">Ram of Brands object.</param>
+            <param name="rom">Rom of Brands object.</param>
+            <param name="typeid">TyypeId of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Repository.TypesRepository">
+            <summary>
+            Repository of Types.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.#ctor(SmartPhoneShop.Data.Models.DatabaseContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Repository.TypesRepository"/> class.
+            </summary>
+            <param name="ctx">injected TypesRepository collection.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.GetAllContentsFromTable">
+            <summary>
+            Gets get all contents from Types table.
+            </summary>
+            <returns>object tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.Getall">
+            <summary>
+            Gets every Types.
+            </summary>
+            <returns>object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.GetOne(System.Int32)">
+            <summary>
+            Gives back a Type object from database.
+            </summary>
+            <param name="id">Type id.</param>
+            <returns>A Type object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.GetTypesTostringbyId(System.Int32)">
+            <summary>
+            Gives back a Types.Tostring() from database.
+            </summary>
+            <param name="id">Types id.</param>
+            <returns>A Type object.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.IsExists(System.Int32)">
+            <summary>
+            Returns true if the Types object is exists.
+            </summary>
+            <param name="id">Types Id.</param>
+            <returns>True if exists, or false not exists.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.Remove(System.Int32)">
+            <summary>
+            Delete a Types object from database.
+            </summary>
+            <param name="id">id of Types object.</param>
+            <returns>True if removed, or false not removed.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.AddType(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a Types object to database.
+            </summary>
+            <param name="brandid">name of Parameters object.</param>
+            <param name="modelname">HalfPrice of Brands object.</param>
+            <param name="rating">Ram of Brands object.</param>
+            <param name="starterprice">Rom of Brands object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+        <member name="P:SmartPhoneShop.Repository.TypesRepository.All">
+            <summary>
+            Gets every data from Types.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.TypesRepository.UpdateTypes(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a Types object to database.
+            </summary>
+            <param name="tipid">id of Types object.</param>,0
+            <param name="brandid">Brand id of Types object.</param>
+            <param name="modelname">Name of Types object.</param>
+            <param name="rating">Rating of Types object.</param>
+            <param name="starterprice">Price of Types object.</param>
+            <returns>True if added, or false not added.</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31019.35
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartPhoneShop.Program", "OENIK_PROG3_2021_1_ANPUBT\SmartPhoneShop.Program.csproj", "{AF113809-ACD9-4F56-B34A-4358EFF91396}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartPhoneShop.Data", "SmartPhoneShop.Data\SmartPhoneShop.Data.csproj", "{BF634D74-8795-497B-A6BA-C0E2728A7764}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartPhoneShop.Logic", "SmartPhoneShop.Logic\SmartPhoneShop.Logic.csproj", "{47D13479-26D6-4128-A89C-47850618E348}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartPhoneShop.Repository", "SmartPhoneShop.Repository\SmartPhoneShop.Repository.csproj", "{E89DF15C-703B-4BA7-BD95-829EFE9F1DDC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmartPhoneShop.Logic.Tests", "SmartPhoneShop.Logic.Tests\SmartPhoneShop.Logic.Tests.csproj", "{FFF5D10B-EF29-4DEC-9C08-855A9A21F11D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution files", "Solution files", "{0B7D23A2-FAF3-4D29-B068-1333F51B7779}"
+	ProjectSection(SolutionItems) = preProject
+		BrandsData.sql = BrandsData.sql
+		ParametersData.sql = ParametersData.sql
+		Typesdata.sql = Typesdata.sql
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF113809-ACD9-4F56-B34A-4358EFF91396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF113809-ACD9-4F56-B34A-4358EFF91396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF113809-ACD9-4F56-B34A-4358EFF91396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF113809-ACD9-4F56-B34A-4358EFF91396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF634D74-8795-497B-A6BA-C0E2728A7764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF634D74-8795-497B-A6BA-C0E2728A7764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF634D74-8795-497B-A6BA-C0E2728A7764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF634D74-8795-497B-A6BA-C0E2728A7764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{47D13479-26D6-4128-A89C-47850618E348}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{47D13479-26D6-4128-A89C-47850618E348}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{47D13479-26D6-4128-A89C-47850618E348}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{47D13479-26D6-4128-A89C-47850618E348}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E89DF15C-703B-4BA7-BD95-829EFE9F1DDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E89DF15C-703B-4BA7-BD95-829EFE9F1DDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E89DF15C-703B-4BA7-BD95-829EFE9F1DDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E89DF15C-703B-4BA7-BD95-829EFE9F1DDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFF5D10B-EF29-4DEC-9C08-855A9A21F11D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFF5D10B-EF29-4DEC-9C08-855A9A21F11D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFF5D10B-EF29-4DEC-9C08-855A9A21F11D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFF5D10B-EF29-4DEC-9C08-855A9A21F11D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {62B81A9A-88C4-46EB-99A8-6A6A7A358E4F}
+	EndGlobalSection
+EndGlobal

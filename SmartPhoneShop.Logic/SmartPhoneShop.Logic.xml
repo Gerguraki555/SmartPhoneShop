@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartPhoneShop.Logic</name>
+    </assembly>
+    <members>
+        <member name="T:SmartPhoneShop.Logic.Blogic">
+            <summary>
+            Blogic class.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.#ctor(SmartPhoneShop.Repository.Interfaces.IBrandsRepository,SmartPhoneShop.Repository.ITypesRepository,SmartPhoneShop.Repository.Interfaces.IParametersRepository)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Logic.Blogic"/> class.
+            </summary>
+            <param name="brand">injected Brandrepository collection.</param>
+            <param name="types">injected Typesrepository collection.</param>
+            <param name="para">injected Parametersrepository collection.</param>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.Blogic.BrandsContents">
+            <inheritdoc/>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.Blogic.ParameterssContents">
+            <inheritdoc/>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.Blogic.TypesContents">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.AddBrands(System.String,System.String,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.AddParameters(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.AddTypes(System.Int32,System.String,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.BrandsIsExits(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.Getbrandsbyid(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.Getparametersbyid(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.Gettypesbyid(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.ParametersIsExits(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.RemoveBrands(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.RemoveParameters(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.RemoveTypes(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.GetAllBrands">
+            <summary>
+            Return all Brand objects.
+            </summary>
+            <returns>List with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.GetAllTypes">
+            <summary>
+            Return all Types objects.
+            </summary>
+            <returns>List with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.GetAllParameters">
+            <summary>
+            Return all Parameters objects.
+            </summary>
+            <returns>List with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.TypesIsExits(System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.UpdateBrands(System.Int32,System.String,System.String,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.UpdateParameters(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.UpdateTypes(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <inheritdoc/>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.FindTypeByBrandName(System.String)">
+            <summary>
+            Return types and using Brandname.
+            </summary>
+            <param name="brandname">name of Brands object.</param>
+            <returns>Icollection with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.NoHalfPriceByTypename(System.String)">
+            <summary>
+            Return parameters where halfprice is 0 and using typename.
+            </summary>
+            <param name="input">Input string.</param>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.BrandAverageRating">
+            <summary>
+            Return average rating of brands.
+            </summary>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.AllHalfPriceByType">
+            <summary>
+            Return all halfprice of models.
+            </summary>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.SumRamAndRomByType(System.String)">
+            <summary>
+            Return all halfprice of models.
+            </summary>
+            <param name="input">Input string.</param>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.FindParameterByTypeName2(System.String)">
+            <summary>
+            return parameters objects and using brandname.
+            </summary>
+            <param name="typename">Input string.</param>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.DoSomething(System.String)">
+            <summary>
+            Find brandname, country and total income from brands and this method using input string.
+            </summary>
+            <param name="input">Input string.</param>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.DoSomethingAsync(System.String)">
+            <summary>
+            Find brandname, country and total income from brands and this method using input string and using Task.
+            </summary>
+            <param name="input">Input string.</param>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.FindParameterByTypeName2Async(System.String)">
+            <summary>
+            Return a parameters object and using typename with Task.
+            </summary>
+            <param name="input">Input string.</param>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.NoHalfPriceByTypenameAsync(System.String)">
+            <summary>
+            Return parameters with task where halfprice is 0 and using typename.
+            </summary>
+            <param name="input">Input string.</param>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Blogic.SumRamAndRomByTypeAsync(System.String)">
+            <summary>
+            Return all halfprice of models.
+            </summary>
+            <param name="input">Input string.</param>
+            <returns>IList with objects.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Logic.ILogic">
+            <summary>
+            Ilogic interface for CRUD and NON-CRUD methods.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.ILogic.BrandsContents">
+            <summary>
+            Gets all contents from Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.ILogic.ParameterssContents">
+            <summary>
+            Gets all contents from Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.ILogic.TypesContents">
+            <summary>
+            Gets all contents from Types.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.UpdateBrands(System.Int32,System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            update a Brands object.
+            </summary>
+            <param name="id">Id of Brands.</param>
+            <param name="brandname">name of brands.</param>
+            <param name="counry">country of brands.</param>
+            <param name="popularity">popularity of brands.</param>
+            <param name="totalincome">totalincome of brands.</param>
+            <returns>True if updated, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.UpdateParameters(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            update a Parameters object.
+            </summary>
+            <param name="id">Id of Parameters.</param>
+            <param name="name">name of Parameters.</param>
+            <param name="halfprice">halfprice of Parameters.</param>
+            <param name="ram">ram of Parameters.</param>
+            <param name="rom">rom of Parameters.</param>
+            <param name="tipid">typeid of Parameters.</param>
+            <returns>True if updated, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.UpdateTypes(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            update a Parameters object.
+            </summary>
+            <param name="id">Id of Parameters.</param>
+            <param name="brandid">name of Parameters.</param>
+            <param name="modelname">halfprice of Parameters.</param>
+            <param name="rating">ram of Parameters.</param>
+            <param name="starterprice">rom of Parameters.</param>
+            <returns>True if updated, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.AddBrands(System.String,System.String,System.Int32,System.Int32)">
+            <summary>
+            update a Types object.
+            </summary>
+            <param name="brandname">name of Brands.</param>
+            <param name="counry">Country of Brands.</param>
+            <param name="popularity">popularity of Brands.</param>
+            <param name="totalincome">totalincome of Brands.</param>
+            <returns>True if updated, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.AddParameters(System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Add a Parameters object.
+            </summary>
+            <param name="name">name of Parameters.</param>
+            <param name="halfprice">halfprice of Parameters.</param>
+            <param name="ram">ram of Parameters.</param>
+            <param name="rom">rom of Parameters.</param>
+            <param name="tipid">typeid of Parameters.</param>
+            <returns>True if updated, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.AddTypes(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Add a Types object.
+            </summary>
+            <param name="brandid">name of Types.</param>
+            <param name="modelname">halfprice of Types.</param>
+            <param name="rating">ram of Types.</param>
+            <param name="starterprice">rom of Types.</param>
+            <returns>True if updated, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.RemoveBrands(System.Int32)">
+            <summary>
+            delete a Brands object.
+            </summary>
+            <param name="id">Id of Brands.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.RemoveTypes(System.Int32)">
+            <summary>
+            delete a Types object.
+            </summary>
+            <param name="id">Id of Types.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.RemoveParameters(System.Int32)">
+            <summary>
+            delete a Parameters object.
+            </summary>
+            <param name="id">Id of Parameters.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.Getbrandsbyid(System.Int32)">
+            <summary>
+            Gives a Brands object.
+            </summary>
+            <param name="id">Id of Types.</param>
+            <returns>Brands tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.Gettypesbyid(System.Int32)">
+            <summary>
+            Gives a Types object.
+            </summary>
+            <param name="id">Id of Types.</param>
+            <returns>Types tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.Getparametersbyid(System.Int32)">
+            <summary>
+            Gives a Parameters object.
+            </summary>
+            <param name="id">Id of Parameters.</param>
+            <returns>Parameters tostring.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.BrandsIsExits(System.Int32)">
+            <summary>
+            Gives back if the Type object is exits with this id exists.
+            </summary>
+            <param name="id">Id of Brands.</param>
+            <returns>True if it exists, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.TypesIsExits(System.Int32)">
+            <summary>
+            Gives back if the Type object is exits with this id exists.
+            </summary>
+            <param name="id">Id of Types.</param>
+            <returns>True if it exists, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.ParametersIsExits(System.Int32)">
+            <summary>
+            Gives back if the Type object is exits with this id exists.
+            </summary>
+            <param name="id">Id of Parameters.</param>
+            <returns>True if it exists, false or not.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.ILogic.FindTypeByBrandName(System.String)">
+            <summary>
+            Return types and using Brandname.
+            </summary>
+            <param name="brandname">name of Brands object.</param>
+            <returns>Icollection with objects.</returns>
+        </member>
+        <member name="T:SmartPhoneShop.Logic.NonCrudObjects.AllhalfPrice">
+            <summary>
+            AllhalfPrice class.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.AllhalfPrice.BrandName">
+            <summary>
+            Gets or sets Name of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.AllhalfPrice.Halfprice">
+            <summary>
+            Gets or sets Average rating of Brands.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.AllhalfPrice.#ctor(System.String,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Logic.NonCrudObjects.AllhalfPrice"/> class.
+            </summary>
+            <param name="name"> Name of types..</param>
+            <param name="halfprice"> halfprice of parameters.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.AllhalfPrice.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:SmartPhoneShop.Logic.NonCrudObjects.BrandRating">
+            <summary>
+            BrandTypeRating class.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.BrandRating.BrandName">
+            <summary>
+            Gets or sets Name of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.BrandRating.Rating">
+            <summary>
+            Gets or sets Average rating of Brands.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.BrandRating.#ctor(System.String,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Logic.NonCrudObjects.BrandRating"/> class.
+            </summary>
+            <param name="name"> Name of brands.</param>
+            <param name="rate"> Name of types.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.BrandRating.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:SmartPhoneShop.Logic.NonCrudObjects.DoSomethhingObject">
+            <summary>
+            DoSomethhingObject class.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.DoSomethhingObject.Brandname">
+            <summary>
+            Gets or sets Name of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.DoSomethhingObject.Country">
+            <summary>
+            Gets or sets Country of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.DoSomethhingObject.TotalIncome">
+            <summary>
+            Gets or sets Total Income of Brands.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.DoSomethhingObject.#ctor(System.String,System.String,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Logic.NonCrudObjects.DoSomethhingObject"/> class.
+            </summary>
+            <param name="brandname"> Name of brands.</param>
+            <param name="country"> Country of brands.</param>
+            <param name="totalincome"> Total income of brands.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.DoSomethhingObject.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter">
+            <summary>
+            NonCrudParameter class.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter.Id">
+            <summary>
+            Gets or sets iD of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter.Name">
+            <summary>
+            Gets or sets Name of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter.HalfPrice">
+            <summary>
+            Gets or sets half price of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter.Ram">
+            <summary>
+            Gets or sets ram of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter.Rom">
+            <summary>
+            Gets or sets rom of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter.TypeId">
+            <summary>
+            Gets or sets TypeiD of Parameters.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter.#ctor(System.Int32,System.String,System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter"/> class.
+            </summary>
+            <param name="id"> id of NonCrudParameter.</param>
+            <param name="name">name of NonCrudParameter.</param>
+            <param name="halfprice">halfprice of NonCrudParameter.</param>
+            <param name="ram">ram of NonCrudParameter.</param>
+            <param name="rom">rom of NonCrudParameter.</param>
+            <param name="typeid">typeid of NonCrudParameter.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.NonCrudParameter.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:SmartPhoneShop.Logic.NonCrudObjects.SumRamAndRom">
+            <summary>
+            SumRamAndRom class.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.SumRamAndRom.BrandName">
+            <summary>
+            Gets or sets Name of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.SumRamAndRom.Ram">
+            <summary>
+            Gets or sets ram of parameter.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Logic.NonCrudObjects.SumRamAndRom.Rom">
+            <summary>
+            Gets or sets rom of parameter.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.SumRamAndRom.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Logic.NonCrudObjects.SumRamAndRom"/> class.
+            </summary>
+            <param name="name"> Name of types..</param>
+            <param name="ram"> ram of parameters.</param>
+            <param name="rom"> rom of parameters.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.NonCrudObjects.SumRamAndRom.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType">
+            <summary>
+            NonCrudType class for non crud methods.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType.Id">
+            <summary>
+            Gets or sets iD of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType.Brandid">
+            <summary>
+            Gets or sets Brandid of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType.Modelname">
+            <summary>
+            Gets or sets ModelName of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType.Rating">
+            <summary>
+            Gets or sets Rating of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType.StarterPrice">
+            <summary>
+            Gets or sets StarterPrice of Types.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType.#ctor(System.Int32,System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType"/> class.
+            </summary>
+            <param name="id"> Id of NoncrudType.</param>
+            <param name="brandid">brandid of NoncrudType.</param>
+            <param name="modelname">modelname of NoncrudType.</param>
+            <param name="rating">rating of NoncrudType.</param>
+            <param name="starterprice">starterprice of NoncrudType.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Repository.NonCrudObjects.NonCrudType.ToString">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>

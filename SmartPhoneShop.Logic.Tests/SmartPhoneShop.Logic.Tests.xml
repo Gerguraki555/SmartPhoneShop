@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartPhoneShop.Logic.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:SmartPhoneShop.Logic.Tests.UnitTests">
+            <summary>
+            Test logic class.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.Setup">
+            <summary>
+            This Method set the tests up.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.Addbrand">
+            <summary>
+            Tests the AddaBrand method.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.Addtypes">
+            <summary>
+            Tests the AddaTypes method.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.Addparameters">
+            <summary>
+            Tests the AddaParameter method.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.BrandsRepositoryReadTest(System.String)">
+            <summary>
+            readability test of the BrandsRepository.
+            </summary>
+            <param name="text">Test content.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.TypesRepositoryReadTest(System.String)">
+            <summary>
+            readability test of the TypesRepository.
+            </summary>
+            <param name="text">Test content.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.ParametersRepositoryReadTest(System.String)">
+            <summary>
+            readability test of the ParametersRepository.
+            </summary>
+            <param name="text">Test content.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.BrandupdateTest">
+            <summary>
+            Test of the UpdateBrands method.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.TypesupdateTest">
+            <summary>
+            Test of the UpdateTypes method.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.ParametersupdateTest">
+            <summary>
+            Test of the UpdateBrands method.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.Getbrandsbyid">
+            <summary>
+            Get a brands object by Id.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.Gettypesbyid">
+            <summary>
+            Get a types object by Id.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.Getparametersbyid">
+            <summary>
+            Get a parameters object by Id.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.RemoveTypes">
+            <summary>
+            Remove a types object from the Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.RemoveBrands">
+            <summary>
+            Remove a brands object from the Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.RemoveParameters">
+            <summary>
+            Remove a parameters object from the Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.GetAllParametersTest">
+            <summary>
+            Return all Parameters object from the Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.GetAllBrandsTest">
+            <summary>
+            Return all Brands object from the Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.GetAllTypesTest">
+            <summary>
+            Return all Types object from the Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.FindTypeByBrandnameTest(System.String)">
+            <summary>
+            Test the FindTypeByBrandname method.
+            </summary>
+            <param name="input">Test content.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.NoHalfPriceTest(System.String)">
+            <summary>
+            Test the NoHalfPriceByBrandName method.
+            </summary>
+            <param name="input">Test content.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.FindParameterByTypeNameTest(System.String)">
+            <summary>
+            Test the FindParameterByTypeName method.
+            </summary>
+            <param name="input">Test content.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.SumRamAndRomTest(System.String)">
+            <summary>
+            Test the SumRamAndRom method.
+            </summary>
+            <param name="input">Test content.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.BrandAverageRatingTest">
+            <summary>
+            Test the BrandAverageRating method.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Logic.Tests.UnitTests.SumHalfPriceByTypesTest">
+            <summary>
+            Test the AllHalfPriceByType method.
+            </summary>
+        </member>
+    </members>
+</doc>

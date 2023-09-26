@@ -1,0 +1,236 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SmartPhoneShop.Data</name>
+    </assembly>
+    <members>
+        <member name="T:SmartPhoneShop.Data.DbMethods">
+            <summary>
+            implements db methods.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.AddBrands(SmartPhoneShop.Data.Models.Brands)">
+            <summary>
+            Add a Brands object in database.
+            </summary>
+            <param name="brand">an brand object.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.RemoveBrands(SmartPhoneShop.Data.Models.Brands)">
+            <summary>
+            Remove a Brands object in database.
+            </summary>
+            <param name="brand">an brand object.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.AddParameters(SmartPhoneShop.Data.Models.Parameters)">
+            <summary>
+            Add a Parameters object in database.
+            </summary>
+            <param name="para">an parameters object.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.RemoveParameters(SmartPhoneShop.Data.Models.Parameters)">
+            <summary>
+            Remove a Parameters object in database.
+            </summary>
+            <param name="para">an parameters object.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.AddTypes(SmartPhoneShop.Data.Models.Types)">
+            <summary>
+            Add a Types object in database.
+            </summary>
+            <param name="typ">an types object.</param>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.RemoveTypes(SmartPhoneShop.Data.Models.Types)">
+            <summary>
+            Remove a Types object in database.
+            </summary>
+            <param name="typ">an types object.</param>
+        </member>
+        <member name="P:SmartPhoneShop.Data.DbMethods.DataContext">
+            <summary>
+            Gets or sets this is the Database context.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.DbMethods.Brands">
+            <summary>
+            Gets the contents of the table Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.DbMethods.Parameters">
+            <summary>
+            Gets the contents of the table Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.DbMethods.Types">
+            <summary>
+            Gets the contents of the table Types.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.GetBrandsbyId(System.Int32)">
+            <summary>
+            Returns a Brands object from database.
+            </summary>
+            <param name="id">Brands ID.</param>
+            <returns>Brands entity.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.GetParametersbyId(System.Int32)">
+            <summary>
+            Returns a Parameters object from database.
+            </summary>
+            <param name="id">Parameters ID.</param>
+            <returns>Parameters entity.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.GetTypesbyId(System.Int32)">
+            <summary>
+            Returns a Types object from database.
+            </summary>
+            <param name="id">Types ID.</param>
+            <returns>Types entity.</returns>
+        </member>
+        <member name="M:SmartPhoneShop.Data.DbMethods.SaveAll">
+            <summary>
+            SaveAll.
+            </summary>
+        </member>
+        <member name="T:SmartPhoneShop.Data.Models.Brands">
+            <summary>
+            Class of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Brands.Id">
+            <summary>
+            Gets or sets iD of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Brands.BrandName">
+            <summary>
+            Gets or sets Name of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Brands.Country">
+            <summary>
+            Gets or sets Country of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Brands.Popularity">
+            <summary>
+            Gets or sets Popularity of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Brands.TotalIncome">
+            <summary>
+            Gets or sets Total Income of Brands.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Data.Models.Brands.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:SmartPhoneShop.Data.Models.DatabaseContext">
+            <summary>
+            DatabaseContext class, inhreits DbContext class. This class controlling the Database.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.DatabaseContext.Brands">
+            <summary>
+            Gets or sets set Brands objects from Database.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.DatabaseContext.Parameters">
+            <summary>
+            Gets or sets set Parameters objects from Database.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.DatabaseContext.Types">
+            <summary>
+            Gets or sets set Types objects from Database.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Data.Models.DatabaseContext.OnConfiguring(Microsoft.EntityFrameworkCore.DbContextOptionsBuilder)">
+            <summary>
+            This method configuring the Database.
+            </summary>
+            <param name="optionsBuilder"></param>
+        </member>
+        <member name="M:SmartPhoneShop.Data.Models.DatabaseContext.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:SmartPhoneShop.Data.Models.DatabaseContext"/> class.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Data.Models.DatabaseContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <summary>
+            OnmodelCreating method. This method using ModelBuilder.
+            </summary>
+            <param name="modelBuilder"></param>
+        </member>
+        <member name="T:SmartPhoneShop.Data.Models.Parameters">
+            <summary>
+            Class of Brands.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Parameters.Id">
+            <summary>
+            Gets or sets iD of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Parameters.Name">
+            <summary>
+            Gets or sets Name of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Parameters.HalfPrice">
+            <summary>
+            Gets or sets half price of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Parameters.Ram">
+            <summary>
+            Gets or sets ram of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Parameters.Rom">
+            <summary>
+            Gets or sets rom of Parameters.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Parameters.TypeId">
+            <summary>
+            Gets or sets TypeiD of Parameters.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Data.Models.Parameters.ToString">
+            <inheritdoc/>
+        </member>
+        <member name="T:SmartPhoneShop.Data.Models.Types">
+            <summary>
+            Class of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Types.Id">
+            <summary>
+            Gets or sets iD of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Types.BrandId">
+            <summary>
+            Gets or sets BrandId of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Types.ModelName">
+            <summary>
+            Gets or sets Model name of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Types.Rating">
+            <summary>
+            Gets or sets rating of Types.
+            </summary>
+        </member>
+        <member name="P:SmartPhoneShop.Data.Models.Types.StarterPrice">
+            <summary>
+            Gets or sets starter price of Types.
+            </summary>
+        </member>
+        <member name="M:SmartPhoneShop.Data.Models.Types.ToString">
+            <inheritdoc/>
+        </member>
+    </members>
+</doc>
